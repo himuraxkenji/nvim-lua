@@ -50,6 +50,9 @@ return {
 				ignore = false,
 			},
 		})
+    vim.cmd("autocmd Colorscheme * highlight NvimTreeNormal guibg=none guifg=#9da5b3")
+
+
 
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
