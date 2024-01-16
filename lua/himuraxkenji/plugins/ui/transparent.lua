@@ -4,7 +4,7 @@ return {
     require("transparent").setup({
       extra_groups = { 
         "NvimTreeNormal",
-        "WhichKeyFloat",
+        "WhichKeyFloat"
       }})
   end,
 }

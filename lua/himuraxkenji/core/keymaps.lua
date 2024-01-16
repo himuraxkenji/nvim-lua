@@ -54,3 +54,6 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set("n", "<C-j", function()
 	vim.diagnostics.goto_next()
 end, opts)
+
+-- save
+keymap.set("n", "<leader>w", "<cmd>w<CR>", { desc = "Save current buffer" })

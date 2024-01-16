@@ -16,6 +16,7 @@ require("lazy").setup({
 	{ import = "himuraxkenji.plugins.lsp" },
 	{ import = "himuraxkenji.plugins.coding" },
 	{ import = "himuraxkenji.plugins.ui" },
+	{ import = "himuraxkenji.plugins.git" },
 }, {
 	install = {
 		colorscheme = { "nightfly" },
