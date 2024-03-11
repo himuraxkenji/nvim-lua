@@ -54,6 +54,7 @@ return {
       information = "",
       other = "",
     },
-    use_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
+    use_diagnostic_signs = false, -- enabling this will use the signs defined in your lsp client,
+    wrap_line = true
 },
 }
