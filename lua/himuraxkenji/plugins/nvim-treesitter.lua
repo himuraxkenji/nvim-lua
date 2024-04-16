@@ -39,7 +39,9 @@ return {
           "lua",
           "dockerfile",
           "gitignore",
-          "python"
+          "python",
+          "query",
+          "vimdoc"
         },
         incremental_selection = {
           enable = true,
