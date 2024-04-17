@@ -36,8 +36,8 @@ keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 
 -- Diagnostics
-keymap.set("n", "<C-j", function()
-  vim.diagnostics.goto_next()
+keymap.set("n", "<C-j>", function()
+  vim.diagnostic.goto_next()
 end, opts)
 
 -- save
@@ -50,7 +50,7 @@ keymap.set("n", "dw", "vb_d")
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Jumplist
-keymap.set("n", "<C-m>", "<C-i>", opts)
+-- keymap.set("n", "<C-m>", "<C-i>", opts)
 
 -- Exit
 keymap.set("n", "<leader>q", "<cmd>q<CR>")
