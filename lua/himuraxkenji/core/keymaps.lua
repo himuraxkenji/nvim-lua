@@ -13,7 +13,6 @@ keymap.set("i", "kj", "<ESC>", { desc = "Exit insert mode with kj" })
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
-
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
@@ -36,10 +35,9 @@ keymap.set("n", "te", ":tabedit ") -- open new tab
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 
-
 -- Diagnostics
 keymap.set("n", "<C-j", function()
-	vim.diagnostics.goto_next()
+  vim.diagnostics.goto_next()
 end, opts)
 
 -- save
@@ -56,6 +54,7 @@ keymap.set("n", "<C-m>", "<C-i>", opts)
 
 -- Exit
 keymap.set("n", "<leader>q", "<cmd>q<CR>")
+keymap.set("n", "<leader>w", "<cmd>w<CR>")
 
 -- delete-single character without copying into register
 -- keymap.set("n", "x", '"_x')

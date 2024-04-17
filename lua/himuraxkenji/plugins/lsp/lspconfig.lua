@@ -2,7 +2,7 @@ return {
 
   {
     "ray-x/go.nvim",
-    dependencies = {  -- optional packages
+    dependencies = { -- optional packages
       "ray-x/guihua.lua",
       "neovim/nvim-lspconfig",
       "nvim-treesitter/nvim-treesitter",
@@ -10,9 +10,9 @@ return {
     config = function()
       require("go").setup()
     end,
-    event = {"CmdlineEnter"},
-    ft = {"go", 'gomod'},
-    build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
+    event = { "CmdlineEnter" },
+    ft = { "go", "gomod" },
+    build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
   },
   {
     "nvimtools/none-ls.nvim",
@@ -28,7 +28,7 @@ return {
           null_ls.builtins.formatting.rubocop,
           null_ls.builtins.formatting.gofumpt,
           null_ls.builtins.formatting.goimports,
-          null_ls.builtins.formatting.golines,
+          -- null_ls.builtins.formatting.golines,
         },
       })
 
@@ -64,7 +64,7 @@ return {
 
           -- set keybinds
           opts.desc = "Show LSP references"
-          keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
+          keymap.set("n", "gr", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
 
           opts.desc = "Go to declaration"
           keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
@@ -170,5 +170,5 @@ return {
         end,
       })
     end,
-  }
+  },
 }
